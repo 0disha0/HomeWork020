@@ -70,7 +70,7 @@ public class Utils extends BasePage{
         //Convert web driver object to TakeScreenshot
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
         //Call getScreenshotAs method to create image file
-        File DestFile=new File("src/main/java/ScreenShot"+screenshotName+TimeStamp()+".jpg");
+        File DestFile=new File("src/main/ScreenShot"+screenshotName+TimeStamp()+".jpg");
         //Move image file to new destination
         FileUtils.copyFile(SrcFile, DestFile);
 
