@@ -12,6 +12,8 @@ public class EmailFriendPage extends Utils{
 
     public void toVerifyUserCAnRefer(){
         typeText(_friendsEmail,"F.R.I.E.N.D@gmail.com");//Passing unique locator and sending user value
+        typeText(_yourEmail, "myemail@email.com");
+        //Uniquely identify the element within the web page fill it with the given user data
         typeText(_Message,"Hey!\nHow are you?\nI thought this might help you, and it has exclusive price to buys\n Don't be late to buy");//Passing unique locator and sending user value
         clickButton(_sendEmail);//clicking the send email button
     }

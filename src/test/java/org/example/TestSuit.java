@@ -41,21 +41,28 @@ public class TestSuit extends BaseTest {
     }
     @Test
     public void toVerifyRegisteredUserShouldBeReferFriendSuccessfully(){
-        homePage.toVerifyUserCanOpenRegisterPage();//OPING THE REGISTER PAGE
-        registerPage.registrationDetails();//adding the register details
-        homePage.toCheckUserRegisteredOrNot();// refreshing the page
-        homePage.toOpenMacBookPage();//opening the page
-        macBookPage.toReferFriend();//selecting the button
-        emailFriendPage.toVerifyUserCAnRefer();// adding the comments and sending the mail
+        homePage.toVerifyUserCanOpenRegisterPage();
+        //OPING THE REGISTER PAGE
+        registerPage.registrationDetails();
+        //adding the register details
+        homePage.toCheckUserRegisteredOrNot();
+        // refreshing the page
+        homePage.toOpenMacBookPage();
+        //opening the page
+        macBookPage.toReferFriend();
+        //selecting the button
+        emailFriendPage.toVerifyUserCAnRefer();
+        // adding the comments and sending the mail
         result.verifyResult();
 
     }
     @Test
-    public void toVerifyUseShouldBeGetAddToCartButtonInEchProduct(){
-        homePage.toVerifyUserCanGoToTheElectronicsPage();//opening the page
-        electronics.navigateToCameraPage();// opening the page
-        cameraPhoto.toVerifyEachProductHasAddToCartButton();// verigying all product has add to cart button
-
+    public void toVerifyUserShouldBeGetAddToCartButtonInEchProduct(){
+        homePage.toVerifyUserCanGoToTheElectronicsPage();
+        //opening the page
+        electronics.navigateToCameraPage();
+        // opening the page
+        cameraPhoto.toVerifyEachProductHasAddToCartButton();
+        // verifying all product has add to cart button
     }
-
 }

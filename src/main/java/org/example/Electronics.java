@@ -7,6 +7,7 @@ public class Electronics extends Utils{
 
        public void navigateToCameraPage() {
            clickButton(_CameraPhoto);
+           driver.manage();
        }
        //navigating the camera and photoPage
 }

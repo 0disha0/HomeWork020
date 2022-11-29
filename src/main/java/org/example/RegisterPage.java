@@ -20,15 +20,15 @@ public class RegisterPage extends Utils{
     public void registrationDetails(){
         clickButton(_selectGender);
         // It identifies the unique element by id and performs click action
-        typeText(_firstName, "Daisha");
+        typeText(_firstName,LoadProp.getProperty("FirstName"));
         // It identifies the unique element by id and fill in FirstName
-        typeText(_lastName, "patel");
+        typeText(_lastName, LoadProp.getProperty("LastName"));
         // It identifies the unique element by id and fill in LastName
-        selectListByValue(_dateOfBirthDay, "24");
+        selectListByValue(_dateOfBirthDay, "BirthDay");
         // Identifies the unique element by xPath and selects Date of birth Day
-        selectListByIndex(_dateOfBirthMonth, 12);
+        selectListByValue(_dateOfBirthMonth, "BirthMonth");
         // Identifies the unique element by name and selects Date of birth Month
-        selectListByVisibleText(_dateOfBirthYear, "2001");
+        selectListByVisibleText(_dateOfBirthYear, "BirthYear");
         // Identifies the unique element by xPath and selects Date of birth Year
         typeText(_email, "daiTesting" + TimeStamp() + "@gmail.com");
         // Identifies unique element by id and fill it with given user inputs - timeStamp is used in between so everytime we test it will be unique and accepts the data

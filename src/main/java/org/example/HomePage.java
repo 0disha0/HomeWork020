@@ -40,9 +40,7 @@ public class HomePage extends Utils {
           clickButton(_vote);
           driver.switchTo().alert().accept();
           // switching to the alert and clicking on ok
-
      }
-
      public void toVerifyUserCanComment() {
           clickButton(_newsDetailsButton); //It identifies unique element by xPath and clicks the button
 
