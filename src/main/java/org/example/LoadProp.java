@@ -30,14 +30,6 @@ public class LoadProp {
     @Test
     public void readKeys() {
         System.out.println(getProperty("url"));
-        System.out.println(getProperty("FirstName"));
-        System.out.println(getProperty("LastName"));
-        System.out.println(getProperty("BirthDay"));
-        System.out.println(getProperty("BirthMonth"));
-        System.out.println(getProperty("BirthYear"));
-        System.out.println(getProperty("browser"));
-        System.out.println(getProperty("BROWSERSTACK_USERNAME"));
-        System.out.println(getProperty("BROWSERSTACK_ACCESS_KEY"));
         System.out.println(getProperty("cloud"));
     }
 }

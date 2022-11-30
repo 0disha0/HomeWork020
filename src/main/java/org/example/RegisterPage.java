@@ -24,19 +24,19 @@ public class RegisterPage extends Utils{
         // It identifies the unique element by id and fill in FirstName
         typeText(_lastName, LoadProp.getProperty("LastName"));
         // It identifies the unique element by id and fill in LastName
-        selectListByValue(_dateOfBirthDay, "BirthDay");
+        selectListByValue(_dateOfBirthDay, LoadProp.getProperty("BirthDay"));
         // Identifies the unique element by xPath and selects Date of birth Day
-        selectListByValue(_dateOfBirthMonth, "BirthMonth");
+        selectListByValue(_dateOfBirthMonth, LoadProp.getProperty("BirthMonth"));
         // Identifies the unique element by name and selects Date of birth Month
-        selectListByVisibleText(_dateOfBirthYear, "BirthYear");
+        selectListByVisibleText(_dateOfBirthYear,LoadProp.getProperty("BirthYear"));
         // Identifies the unique element by xPath and selects Date of birth Year
-        typeText(_email, "daiTesting" + TimeStamp() + "@gmail.com");
+       typeText(_email, LoadProp.getProperty("Em" + TimeStamp() + "ail"));
         // Identifies unique element by id and fill it with given user inputs - timeStamp is used in between so everytime we test it will be unique and accepts the data
-        typeText(_companyName, "Unique Private ltd. ");
+        typeText(_companyName,LoadProp.getProperty( "Company"));
         // Identifies unique element by name and fill in Company name
-        typeText(_password, "Dai1234");
+        typeText(_password, LoadProp.getProperty("Password"));
         // Identifies the unique element by id and fill the Password
-        typeText(_confirmPassword, "Dai1234");
+        typeText(_confirmPassword, LoadProp.getProperty("ConfirmPassword"));
         // Identifies the unique element by id and fill the ConfirmPassword
         clickButton(_registerButton);
         // Identifies unique element by id and click the Register button

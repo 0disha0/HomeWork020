@@ -26,7 +26,7 @@ public class DriverManager extends BasePage {
         public void openBrowser() {
             //run in a cloud==================================================================================================================
 
-            if(runIncloud){
+            if(runIncloud){//this command to run it at the cloud windows
                 System.out.println("Running in the cloud");
                 //connect to cloud
                 if (browserName.equalsIgnoreCase("Edge")) {
@@ -60,13 +60,12 @@ public class DriverManager extends BasePage {
                     throw new RuntimeException(e);
                 }
 
-            }else {
+            }else {//This command to run in the local window
                 System.out.println("Running locally");
                 // run in locally============================================================================================================
-
                 if (browserName.equalsIgnoreCase("Chrome")) {
                     // System.setProperty() method forms the basis for test automation on any browser
-                    System.setProperty("webdriver.chrome.driver", "chromedriver");
+                    System.setProperty("webdriver.chrome.driver", "src/test/java/Driver/chromedriver");
                     // Test case automation on chrome
                     driver = new ChromeDriver();
                 } else if (browserName.equalsIgnoreCase("Edge")) {
@@ -93,7 +92,7 @@ public class DriverManager extends BasePage {
         }
         public static void closeBrowser(){
                 //to close the web browser
-                driver.quit();
+                //driver.quit();
         }
 
 }

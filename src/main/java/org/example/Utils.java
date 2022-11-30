@@ -29,7 +29,8 @@ public class Utils extends BasePage{
     }
 
     //This method will check and send the select list by value
-    public static void selectListByValue(By by, String value){
+
+    public static void selectListByValue(By by, String value) {
         Select select = new Select(driver.findElement(by));
         select.selectByValue(value);
     }

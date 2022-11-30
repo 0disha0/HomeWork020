@@ -10,7 +10,11 @@ public class TestSuit extends BaseTest {
     EmailFriendPage emailFriendPage =new EmailFriendPage();
     Electronics electronics =new Electronics();
     CameraPhoto cameraPhoto= new CameraPhoto();
+
+    SearchPage searchPage = new SearchPage();
     Result result =new Result();
+
+
 
 
     @Test
@@ -64,5 +68,17 @@ public class TestSuit extends BaseTest {
         // opening the page
         cameraPhoto.toVerifyEachProductHasAddToCartButton();
         // verifying all product has add to cart button
+    }
+    @Test
+    public void toVerifyHeaderMenuCategoryColorBeforeHoverAndAfter(){
+        //homePage.toHoverOverAndNavigateToDesiredCategoryPage("Electronics","Camera & photo");
+        homePage.toHoverMouseOverComputerMenuAndDesktopsSubMenu();
+    }
+
+    @Test
+    public void toVerifySearchBarNavigateSuccessfully(){
+        homePage.toVerifySearchBar();
+        searchPage.toVerifyProduct();
+
     }
 }
