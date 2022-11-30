@@ -10,16 +10,17 @@ public class BaseTest extends Utils {
     DriverManager driverManager =new DriverManager();
 
     @BeforeMethod
-    public void setup(){//calling the method to open a browser
+    public void setup() {//calling the method to open a browser
         driverManager.openBrowser();
     }
-    @AfterMethod
-    public void tearDown(ITestResult result) throws IOException {
-        if (!result.isSuccess()) {
-            takeScreenshot(result.getName());//calling the method and comparing
-        }
-        // calling the browser to close the web browser
-        driverManager.closeBrowser();
-    }
+//    }
+//    @AfterMethod
+//    public void tearDown(ITestResult result) throws IOException {
+//        if (!result.isSuccess()) {
+//            takeScreenshot(result.getName());//calling the method and comparing
+//        }
+//        // calling the browser to close the web browser
+//        driverManager.closeBrowser();
+//    }
 
 }

@@ -29,7 +29,8 @@ public class Utils extends BasePage{
     }
 
     //This method will check and send the select list by value
-    public static void selectListByValue(By by, String value){
+
+    public static void selectListByValue(By by, String value) {
         Select select = new Select(driver.findElement(by));
         select.selectByValue(value);
     }
@@ -41,7 +42,7 @@ public class Utils extends BasePage{
     }
 
     //This method will check and send the select list value by index value
-    public static void selectListByIndex(By by, int value){
+    public static void selectListByIndex(By by,int value){
         Select select = new Select(driver.findElement(by));
         select.selectByIndex(value);
     }
@@ -70,7 +71,7 @@ public class Utils extends BasePage{
         //Convert web driver object to TakeScreenshot
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
         //Call getScreenshotAs method to create image file
-        File DestFile=new File("src/main/ScreenShot"+screenshotName+TimeStamp()+".jpg");
+        File DestFile=new File("src/main/ScreenShot/"+screenshotName+TimeStamp()+".jpg");
         //Move image file to new destination
         FileUtils.copyFile(SrcFile, DestFile);
 
