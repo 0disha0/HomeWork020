@@ -141,4 +141,8 @@ public class HomePage extends Utils {
           clickButton(_searchButton);
 
           }
+     public void clickOnCategoryPage (String category) {
+          clickButton(By.linkText(category));
+
+     }
 }
