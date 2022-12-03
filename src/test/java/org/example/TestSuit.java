@@ -49,6 +49,8 @@ public class TestSuit extends BaseTest {
         //OPING THE REGISTER PAGE
         registerPage.registrationDetails();
         //adding the register details
+        registerPage.clickOnRegisterButton();
+        // to click on the button
         homePage.toCheckUserRegisteredOrNot();
         // refreshing the page
         homePage.toOpenMacBookPage();
